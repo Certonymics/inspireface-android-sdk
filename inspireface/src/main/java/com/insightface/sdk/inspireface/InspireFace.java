@@ -38,7 +38,7 @@ public class InspireFace extends TypeDefine {
      * @return resource file path
      */
     public static String copyResourceFileToApplicationDir(Context context) {
-        File externalFilesDir = context.getExternalFilesDir(null);
+        File externalFilesDir = context.getFilesDir(null);
         File resourceDir = new File(externalFilesDir, INSPIREFACE_IN_ASSETS_FOLDER_NAME);
 
         String resourceFolderPath = resourceDir.getAbsolutePath();
